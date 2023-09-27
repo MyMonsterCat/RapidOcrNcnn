@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
                 imgPath.assign(optarg);
                 imgDir.assign(imgPath.substr(0, imgPath.find_last_of('/') + 1));
                 imgName.assign(imgPath.substr(imgPath.find_last_of('/') + 1));
-                printf("imgDir=%s, imgName=%s\n", imgDir.c_str(), imgName.c_str());
+//                printf("imgDir=%s, imgName=%s\n", imgDir.c_str(), imgName.c_str());
                 break;
             case 't':
                 numThread = (int) strtol(optarg, NULL, 10);
@@ -119,7 +119,7 @@ int main(int argc, char **argv) {
                 //printf("mostAngle=%d\n", mostAngle);
                 break;
             case 'v':
-                printf("%s\n", VERSION);
+//                printf("%s\n", VERSION);
                 printGpuInfo();
                 return 0;
             case 'h':

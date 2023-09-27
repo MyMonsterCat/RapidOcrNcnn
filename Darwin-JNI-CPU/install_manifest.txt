@@ -1,0 +1,1 @@
+/Users/monster/CLionProjects/RapidOcrNcnn/Darwin-JNI-CPU/install/lib/libRapidOcrNcnn.dylib

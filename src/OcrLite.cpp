@@ -25,7 +25,7 @@ void OcrLite::initLogger(bool isConsole, bool isPartImg, bool isResultImg) {
 void OcrLite::enableResultTxt(const char *path, const char *imgName) {
     isOutputResultTxt = true;
     std::string resultTxtPath = getResultTxtFilePath(path, imgName);
-    printf("resultTxtPath(%s)\n", resultTxtPath.c_str());
+//    printf("resultTxtPath(%s)\n", resultTxtPath.c_str());
     resultTxt = fopen(resultTxtPath.c_str(), "w");
 }
 

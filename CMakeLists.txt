@@ -21,6 +21,7 @@ set(OCR_BENCHMARK ON)
 #set(OCR_OUTPUT "BIN")
 
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_OSX_ARCHITECTURES arm64)
 add_definitions(-DUNICODE -D_UNICODE)
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     add_definitions("-Wall -g -O0")

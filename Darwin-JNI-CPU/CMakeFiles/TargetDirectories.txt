@@ -1,0 +1,7 @@
+/Users/monster/CLionProjects/RapidOcrNcnn/Darwin-JNI-CPU/CMakeFiles/RapidOcrNcnn.dir
+/Users/monster/CLionProjects/RapidOcrNcnn/Darwin-JNI-CPU/CMakeFiles/edit_cache.dir
+/Users/monster/CLionProjects/RapidOcrNcnn/Darwin-JNI-CPU/CMakeFiles/rebuild_cache.dir
+/Users/monster/CLionProjects/RapidOcrNcnn/Darwin-JNI-CPU/CMakeFiles/list_install_components.dir
+/Users/monster/CLionProjects/RapidOcrNcnn/Darwin-JNI-CPU/CMakeFiles/install.dir
+/Users/monster/CLionProjects/RapidOcrNcnn/Darwin-JNI-CPU/CMakeFiles/install/local.dir
+/Users/monster/CLionProjects/RapidOcrNcnn/Darwin-JNI-CPU/CMakeFiles/install/strip.dir

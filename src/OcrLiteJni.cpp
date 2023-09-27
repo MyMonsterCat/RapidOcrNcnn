@@ -67,7 +67,7 @@ Java_com_benjaminwan_ocrlibrary_OcrEngine_getVersion(JNIEnv *env, jobject thiz) 
 extern "C" JNIEXPORT jboolean JNICALL
 Java_com_benjaminwan_ocrlibrary_OcrEngine_setNumThread(JNIEnv *env, jobject thiz, jint numThread) {
     ocrLite->setNumThread(numThread);
-    printf("numThread=%d\n", numThread);
+//    printf("numThread=%d\n", numThread);
     return JNI_TRUE;
 }
 
@@ -95,8 +95,8 @@ Java_com_benjaminwan_ocrlibrary_OcrEngine_initModels(JNIEnv *env, jobject thiz, 
     std::string clsName = jstringToChar(env, cls);
     std::string recName = jstringToChar(env, rec);
     std::string keysName = jstringToChar(env, keys);
-    printf("modelsDir=%s\ndet=%s\ncls=%s\nrec=%s\nkeys=%s\n", modelsDir.c_str(), detName.c_str(), clsName.c_str(),
-           recName.c_str(), keysName.c_str());
+//    printf("modelsDir=%s\ndet=%s\ncls=%s\nrec=%s\nkeys=%s\n", modelsDir.c_str(), detName.c_str(), clsName.c_str(),
+//           recName.c_str(), keysName.c_str());
     std::string modelDetPath, modelClsPath, modelRecPath, keysPath;
     if (detName.empty()) {
         modelDetPath = modelsDir + "/" + "dbnet_op";
@@ -177,7 +177,7 @@ Java_com_benjaminwan_ocrlibrary_OcrEngine_detect(JNIEnv *env, jobject thiz, jstr
     }
     std::string imgDir = imgPath.substr(0, imgPath.find_last_of('/') + 1);
     std::string imgName = imgPath.substr(imgPath.find_last_of('/') + 1);
-    printf("imgDir=%s, imgName=%s\n", imgDir.c_str(), imgName.c_str());
+//    printf("imgDir=%s, imgName=%s\n", imgDir.c_str(), imgName.c_str());
     OcrResult result = ocrLite->detect(imgDir.c_str(), imgName.c_str(), padding, maxSideLen,
                                        boxScoreThresh, boxThresh, unClipRatio, doAngle, mostAngle);
     return OcrResultUtils(env, result).getJObject();
